@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/invitstion/static/css/main.e5db3a34.css",
+    "main.js": "/invitstion/static/js/main.122cbf81.js",
+    "static/media/married-couple-holding-hands-side-view.jpg": "/invitstion/static/media/married-couple-holding-hands-side-view.fc3de4ba0c8d8806f384.jpg",
+    "static/media/1.jpg": "/invitstion/static/media/1.5f8bf27a6ec9e78de117.jpg",
+    "static/media/wedding.png": "/invitstion/static/media/wedding.11b2f39e16f3018dcfc5.png",
+    "static/media/DancingScript-Regular.ttf": "/invitstion/static/media/DancingScript-Regular.5e15416c2d596d51a588.ttf",
+    "static/media/Victory.otf": "/invitstion/static/media/Victory.30e5e38c55bcc00a70d2.otf",
+    "static/media/poqrik.ttf": "/invitstion/static/media/poqrik.8ed12c1ec22abd574fb0.ttf",
+    "static/media/car.png": "/invitstion/static/media/car.90a8e46050deaad9270d.png",
+    "static/media/glasses.png": "/invitstion/static/media/glasses.8e1b30cf2e23f74ece25.png",
+    "index.html": "/invitstion/index.html",
+    "main.e5db3a34.css.map": "/invitstion/static/css/main.e5db3a34.css.map",
+    "main.122cbf81.js.map": "/invitstion/static/js/main.122cbf81.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5db3a34.css",
+    "static/js/main.122cbf81.js"
+  ]
+}
