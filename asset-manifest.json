@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/invitation/static/css/main.6e45cbc3.css",
+    "main.css": "/invitation/static/css/main.2a494e5c.css",
     "main.js": "/invitation/static/js/main.9d4953e8.js",
     "static/media/married-couple-holding-hands-side-view.jpg": "/invitation/static/media/married-couple-holding-hands-side-view.fc3de4ba0c8d8806f384.jpg",
     "static/media/1.jpg": "/invitation/static/media/1.5f8bf27a6ec9e78de117.jpg",
@@ -11,11 +11,11 @@
     "static/media/car.png": "/invitation/static/media/car.90a8e46050deaad9270d.png",
     "static/media/glasses.png": "/invitation/static/media/glasses.8e1b30cf2e23f74ece25.png",
     "index.html": "/invitation/index.html",
-    "main.6e45cbc3.css.map": "/invitation/static/css/main.6e45cbc3.css.map",
+    "main.2a494e5c.css.map": "/invitation/static/css/main.2a494e5c.css.map",
     "main.9d4953e8.js.map": "/invitation/static/js/main.9d4953e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e45cbc3.css",
+    "static/css/main.2a494e5c.css",
     "static/js/main.9d4953e8.js"
   ]
 }
