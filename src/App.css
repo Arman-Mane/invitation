@@ -1,0 +1,56 @@
+canvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+  }
+  
+  .maxWidth {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  @font-face {
+    font-family: "poqrik";
+    src: url("./assets/fonts/poqrik.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "DancingScript";
+    src: url("./assets/fonts/DancingScript-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Victory";
+    src: url("./assets/fonts/Victory.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .scrollAnim {
+    animation: scrollAnim linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
+  }
+  
+  @keyframes scrollAnim {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
