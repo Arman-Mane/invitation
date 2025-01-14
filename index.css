@@ -18,10 +18,10 @@ html {
   font-family: "Armenia2";
   src: url(./font/ArTarumianBarakU-Regular.ttf);
 }
-@font-face {
+/* @font-face {
   font-family: "Armenia3";
   src: url(./font/ArmeniapediaJhapaven.ttf);
-}
+} */
 @font-face {
   font-family: "Armenia4";
   src: url(./font/ArTarumianBarakU-Bold.ttf);
@@ -124,10 +124,10 @@ section {
 }
 .line {
   width: 200px;
-  margin: 0 auto;
-  height: 2px;
+  margin: 50px auto;
+  height: 1px;
   border-radius: 20px;
-  background-color: #353535b7;
+  background-color: #3535355f;
 }
 
 .weddingImg {
@@ -172,7 +172,7 @@ section {
 
 .countdown-title{
   font-size: 2.5rem;
-  text-align: start;
+  text-align: startgit ;
 }
 #countdown {
   display: flex;
@@ -280,5 +280,8 @@ iframe {
   }
   .swiper {
     max-width: 250px;
+  }
+  .line {
+    margin: 20px auto;
   }
 }
