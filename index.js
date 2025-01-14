@@ -39,3 +39,19 @@ const interval = setInterval(() => {
       clearInterval(interval);
     }
   }, 1000);
+
+
+
+window.onscroll = function() {
+    let currentScroll = document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
+
+    if (currentScroll > 1300){
+      lastScroll = currentScroll;
+      document.getElementById("toTop").classList.add("show");
+    }else{
+      lastScroll = currentScroll;
+      document.getElementById("toTop").classList.remove("show");
+    }
+};
+
+document.getElementById("toTop").addEventListener("click", () => window.scrollTo(0,0))
