@@ -19,7 +19,7 @@ const calculateTimeLeft = (targetDate) => {
   };
 };
 
-const targetDate = "2025-08-08T23:59:59";
+const targetDate = "2025-08-08T15:00";
 
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
