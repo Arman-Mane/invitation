@@ -17,14 +17,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
 
     <div class="toTop" id="toTop">
-            <i class="fa-solid fa-angle-up"></i>
+        <i class="fa-solid fa-angle-up"></i>
     </div>
     <div class="layout">
         <header class="header" id="top">
@@ -94,7 +93,7 @@
                     </div>
                     <h3 class="title2">Խնջույք</h3>
                     <div class="time">15:00</div>
-                    <div class="city">RHodes Music hall</div>
+                    <div class="city">Նոր Դվին</div>
                     <a href="#srah" class="how-to-reach">
                         Ինչպես հասնել
                     </a>
@@ -106,8 +105,23 @@
                     <h3 class="title2">Ավարտ</h3>
                     <div class="time">00:00</div>
                 </div>
+    </div>
+
+    <div class="line"></div>
 
 
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/IMG_0218.JPG" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/IMG_0219.JPG" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/IMG_0236.JPG" alt="">
+            </div>
+        </div>
 
     </div>
     <div class="line"></div>
@@ -123,11 +137,9 @@
 
     <h2 id="ekexeci">Ինչպես հասնել Սաղմոսավանք վանական համալիր
     </h2>
-    <iframe
-        src="https://yandex.com/map-widget/v1/?ll=44.394665%2C40.380342&mode=search&oid=8680895053&ol=biz&utm_source=share&z=16.5"
-        allowfullscreen="true" style="position:relative;"></iframe>
+    <iframe src="https://yandex.com/map-widget/v1/?ll=44.394665%2C40.380342&mode=search&oid=8680895053&ol"
+        style="position:relative;"></iframe>
 
-    <div class="line"></div>
     <div class="place-item layout">
         <h2>Նոր Դվին</h2>
         <div class="place-photo">
@@ -151,8 +163,22 @@
     </div>
 
     </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const swiper = new Swiper('.swiper', {
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                autoplay: true,
+                effect: "cards"
+            });
+        });
+    </script>
 </body>
 
 </html>
