@@ -170,6 +170,10 @@ section {
   border: 2px solid #353535;
 }
 
+.countdown-title{
+  font-size: 2.5rem;
+  text-align: start;
+}
 #countdown {
   display: flex;
   gap: 40px;
