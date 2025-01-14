@@ -31,6 +31,7 @@ body {
 
 .layout {
   padding: 40px;
+  text-align: center;
 }
 
 .header {
@@ -92,9 +93,16 @@ section {
   width: 200px;
   height: 2px;
   border-radius: 20px;
-  background-color: #ffffff52;
+  background-color: #353535b7;
 }
 
+.weddingImg {
+  max-width: 500px ;
+
+}
+.weddingImg img {
+  width: 100%;
+}
 .place {
   display: flex;
   flex-direction: column;
