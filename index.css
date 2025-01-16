@@ -18,10 +18,7 @@ html {
   font-family: "Armenia2";
   src: url(./font/ArTarumianBarakU-Regular.ttf);
 }
-/* @font-face {
-  font-family: "Armenia3";
-  src: url(./font/ArmeniapediaJhapaven.ttf);
-} */
+
 @font-face {
   font-family: "Armenia4";
   src: url(./font/ArTarumianBarakU-Bold.ttf);
@@ -103,7 +100,7 @@ main {
 }
 .date {
   position: absolute;
-  bottom: -35px;
+  bottom: -50px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 4rem;
@@ -172,7 +169,7 @@ section {
 
 .countdown-title{
   font-size: 2.5rem;
-  text-align: startgit ;
+  text-align: start ;
 }
 #countdown {
   display: flex;
@@ -236,7 +233,7 @@ iframe {
 
 #srah,
 #ekexeci {
-  font-size: clamp(2rem, 5vw, 2rem);
+  font-size: clamp(1.5rem, 5vw, 2rem);
   padding: 20px;
   text-align: center;
 }
