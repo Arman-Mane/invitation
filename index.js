@@ -19,7 +19,7 @@ const calculateTimeLeft = (targetDate) => {
   };
 };
 
-const targetDate = "2025-08-18T15:00";
+const targetDate = "2025-08-07T15:00";
 
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
@@ -55,3 +55,16 @@ window.onscroll = function() {
 };
 
 document.getElementById("toTop").addEventListener("click", () => window.scrollTo(0,0))
+
+
+
+const confirmBtn = document.querySelector(".confirm-btn");
+const guestCount = document.querySelector(".guestCount");
+const guestName = document.querySelector(".guestName");
+
+confirmBtn.addEventListener("click", (e) => {
+  e.preventDefault()
+  console.log("click");
+  console.log(guestName.value);
+  console.log(guestCount.value);
+})

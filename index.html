@@ -10,13 +10,6 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./index.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
@@ -35,7 +28,7 @@
                     <div class="name2 name">Մանե</div>
                 </div>
                 <div class="date">
-                    18.08.25
+                    07.08.25
                 </div>
             </div>
 
@@ -61,7 +54,76 @@
                         </div>
                     </div>
                 </div>
-                <div class="line" id="down"></div>
+                <div class="line"></div>
+                <div id="calendar">
+                    <h1 style="text-align: center;">Օգոստոս 2025</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Երկ</th>
+                                <th>Երք</th>
+                                <th>Չոր</th>
+                                <th>Հնգ</th>
+                                <th>Ուրբ</th>
+                                <th>Շբթ</th>
+                                <th>Կիր</th>
+                            </tr>
+                        </thead>
+                        <tbody id="days">
+                            <tr>
+                                <!-- <td></td> -->
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td class="seven">
+                                    <i class="fa-regular fa-heart"></i>
+                                    7
+                                </td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                            </tr>
+                            <tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="line"></div>
 
                 <div class="weddingImg">
                     <img src="./images/wedding.png" alt="">
@@ -110,8 +172,8 @@
                     </div>
                     <h3 class="title2">Խնջույք</h3>
                     <div class="time">18:00</div>
-                    <div class="city">Morena White</div>
-                    <a href="https://yandex.com/maps/-/CHaEQA4-" target="_blank" class="how-to-reach">
+                    <div class="city">Arev Hall</div>
+                    <a href="https://yandex.com/maps/-/CHaZ7Dl1" target="_blank" class="how-to-reach">
                         Ինչպես հասնել
                     </a>
                 </div>
@@ -142,13 +204,13 @@
                 <div class="line"></div>
 
                 <div class="place-item layout">
-                    <h2>Morena White</h2>
+                    <h2>Arev Hall</h2>
                     <div class="place-photo">
-                        <img src="./images/dvin.jpg" alt="">
+                        <img src="./images/arev.jpg" alt="">
                     </div>
-                    <h2 id="srah">Արարատի մարզ, Մասիս
-                        Մխիթար Հերացու փող., 7/8 շենք</h2>
-                    <a href="https://yandex.com/maps/-/CHaEQA4-" target="_blank" class="how-to-reach">
+                    <h2 id="srah">Արմավիրի մարզ, Մեծամոր
+                        2-րդ թաղամաս, 9/1 շենք</h2>
+                    <a href="https://yandex.com/maps/-/CHaZ7Dl1" target="_blank" class="how-to-reach">
                         Ինչպես հասնել
                     </a>
                 </div>
@@ -159,8 +221,32 @@
                     <h3>«Արդ, մնում են այս երեքը՝ հավատ, հույս, սեր, և սրանցից մեծագույնը սերն է» </h3>
 
                 </div>
+
+
+                <div class="line"></div>
+                <div class="confirm">
+                    <div class="confirm-title">Խնդրում ենք հաստատել ձեր ներկայությունը</div>
+
+
+                    <form action="GET" class="confirm-form">
+                        <input type="text" class="guestName" name="guestName" placeholder="Գրեք Ձեր անունը">
+                        <select name="guestCount" id="" class="guestCount">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <button class="confirm-btn">
+                            Հաստատել
+                        </button>
+
+                    </form>
+
+
+                </div>
             </section>
-    </div>
+
+        </main>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
