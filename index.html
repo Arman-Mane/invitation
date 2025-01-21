@@ -11,6 +11,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -36,10 +38,11 @@
         </header>
         <main>
             <section>
-                <div class="countdown-sec">
+                <div class="countdown-sec" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
 
                     <h2 class="countdown-title">Հարսանիքին մնաց՝</h2>
-                    <div id="countdown">
+                    <div id="countdown" >
                         <div className="countdown-item">
                             <p id="days">00</p> <span>ՕՐ</span>
                         </div>
@@ -55,7 +58,8 @@
                     </div>
                 </div>
                 <div class="line"></div>
-                <div id="calendar">
+                <div id="calendar" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                     <h1 style="text-align: center;">Օգոստոս 2025</h1>
                     <table>
                         <thead>
@@ -125,11 +129,13 @@
                 </div>
                 <div class="line"></div>
 
-                <div class="weddingImg">
+                <div class="weddingImg" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                     <img src="./images/wedding.png" alt="">
                 </div>
 
-                <div class="text">
+                <div class="text" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                     <h3>Սիրելի՜ ընկերներ, բարեկամներ և հարազատներ
 
 
@@ -138,7 +144,10 @@
                     </h4>
                 </div>
 
-                <div class="swiper">
+                <div class="swiper" data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="500">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="./images/IMG_0218.JPG" alt="">
@@ -153,7 +162,8 @@
 
                 </div>
                 <div class="line"></div>
-                <div class="place">
+                <div class="place" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                     <div class="place-img">
                         <img src="./images/church-1.png" alt="church">
                     </div>
@@ -166,7 +176,8 @@
                 </div>
                 <div class="line"></div>
 
-                <div class="place">
+                <div class="place" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                     <div class="place-img">
                         <img src="./images/glasses.png" alt="glasses">
                     </div>
@@ -177,7 +188,8 @@
                         Ինչպես հասնել
                     </a>
                 </div>
-                <div class="place">
+                <div class="place" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                     <div class="place-img">
                         <img src="./images/car.png" alt="glasses">
                     </div>
@@ -187,7 +199,8 @@
 
 
                 <div class="line"></div>
-                <div class="place-item">
+                <div class="place-item" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
 
                     <h2>Սաղմոսավանք վանական համալիր</h2>
 
@@ -203,7 +216,8 @@
                 </div>
                 <div class="line"></div>
 
-                <div class="place-item layout">
+                <div class="place-item layout" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                     <h2>Arev Hall</h2>
                     <div class="place-photo">
                         <img src="./images/arev.jpg" alt="">
@@ -217,14 +231,16 @@
 
                 <div class="line"></div>
 
-                <div class="text text2 layout">
+                <div class="text text2 layout" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                     <h3>«Արդ, մնում են այս երեքը՝ հավատ, հույս, սեր, և սրանցից մեծագույնը սերն է» </h3>
 
                 </div>
 
 
                 <div class="line"></div>
-                <div class="confirm">
+                <div class="confirm" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                     <div class="confirm-title">Խնդրում ենք հաստատել ձեր ներկայությունը</div>
 
 
@@ -251,7 +267,9 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+         AOS.init();
 
         document.addEventListener('DOMContentLoaded', () => {
             const swiper = new Swiper('.swiper', {
