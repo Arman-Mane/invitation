@@ -100,7 +100,7 @@ main {
 }
 .date {
   position: absolute;
-  bottom: -50px;
+  top:  100%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 4rem;
@@ -158,14 +158,35 @@ section {
   width: 100%;
   height: 100%;
 }
+.place-photo{
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.church-photo {
+  background:  linear-gradient(#353535a8, #353535a8), url(./images/St._Gayane_Church.jpg) no-repeat;
+  background-size: cover;
+  background-position: center ;
+  
+}
+.arev-photo{
+  background:  linear-gradient(#353535a8, #353535a8), url(./images/arev.jpg) no-repeat;
+  background-size: cover;
+  background-position: center ;
+}
 .how-to-reach {
   background: none;
   padding: 12px 24px;
-  color: #353535;
+  color: #fff;
   font-size: 2.5rem;
   border-radius: 20px;
-  border: 2px solid #353535;
+  border: 2px solid #fff;
 }
+
 
 .countdown-title {
   font-size: 2.5rem;
@@ -271,7 +292,7 @@ iframe {
   flex-wrap: wrap;
   gap: 10px;
 }
-.confirm-form input {
+.confirm-form .guestName {
   background-color: #353535;
   border: none;
   padding: 10px;
@@ -280,13 +301,15 @@ iframe {
   flex: 3 0 100%;
 
 }
-.confirm-form input:focus {
+
+.confirm-form .guestName:focus {
   outline: none;
 }
-.confirm-form input::placeholder {
+
+.confirm-form .guestName::placeholder {
   color: #f3f3f3;
 }
-.guestCount{
+.guestCount, .brideOrGroom{
   background-color: #353535;
   color: #f3f3f3;
   padding: 10px;
@@ -304,6 +327,7 @@ iframe {
   padding: 10px;
   font-size: 20px;
 }
+
 
 
 table {
@@ -344,6 +368,53 @@ th {
 	        animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
+
+.yesOrNo {
+  display: flex;
+  gap: 20px;
+}
+.vLine {
+  width: 2px;
+  height: 50px;
+  background-color: #3535355f;
+}
+.container {
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.container span {
+  font-size: 35px;
+}
+
+.container input {
+  display: none;
+}
+
+.container svg {
+  overflow: visible;
+}
+
+.path {
+  fill: none;
+  stroke: #353535;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+  stroke-dasharray: 241 9999999;
+  stroke-dashoffset: 0;
+}
+
+.container input:checked ~ svg .path {
+  stroke-dasharray: 70.5096664428711 9999999;
+  stroke-dashoffset: -262.2723388671875;
+}
+
+
+
+
 @keyframes heartbeat {
   from {
     -webkit-transform: translate(-50%, -50%) scale(1);
@@ -380,7 +451,6 @@ th {
 }
 
 
-
 @media screen and (max-width: 700px) {
   .swiper {
     max-width: 300px;
@@ -393,6 +463,7 @@ th {
   .how-to-reach {
     font-size: 1.8rem;
   }
+
   .countdown {
     gap: 25px;
   }
