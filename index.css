@@ -314,7 +314,6 @@ iframe {
   color: #f3f3f3;
   padding: 10px;
   font-size: 20px;
-  /* width: 100px; */
   flex: 1 0 100px;
 
 }
@@ -371,6 +370,7 @@ th {
 
 .yesOrNo {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 .vLine {
@@ -472,5 +472,11 @@ th {
   }
   .line {
     margin: 20px auto;
+  }
+  yesOrNo {
+    justify-content: center;
+  }
+  .vLine {
+    display: none;
   }
 }
