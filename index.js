@@ -67,9 +67,8 @@ const audioPlayer = document.getElementById("audio-player");
 
 toggle.addEventListener("change", () => {
   if (toggle.checked) {
-    audioPlayer.play(); // Երգը միացնել
+    audioPlayer.play();նել
   } else {
-    audioPlayer.pause(); // Երգը կանգնեցնել
-    audioPlayer.currentTime = 0; // Սկսել սկզբից
-  }
+    audioPlayer.pause(); 
+    // audioPlayer.currentTime = 0;
 });
