@@ -71,4 +71,5 @@ toggle.addEventListener("change", () => {
   } else {
     audioPlayer.pause(); 
     // audioPlayer.currentTime = 0;
+  }
 });
