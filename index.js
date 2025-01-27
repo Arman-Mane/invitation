@@ -26,45 +26,50 @@ const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 
-
 const interval = setInterval(() => {
-    const timeLeft = calculateTimeLeft(targetDate);
-  
-    daysEl.textContent = String(timeLeft.days).padStart(2, "0");
-    hoursEl.textContent = String(timeLeft.hours).padStart(2, "0");
-    minutesEl.textContent = String(timeLeft.minutes).padStart(2, "0");
-    secondsEl.textContent = String(timeLeft.seconds).padStart(2, "0");
-  
-    if (timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0) {
-      clearInterval(interval);
-    }
-  }, 1000);
+  const timeLeft = calculateTimeLeft(targetDate);
 
+  daysEl.textContent = String(timeLeft.days).padStart(2, "0");
+  hoursEl.textContent = String(timeLeft.hours).padStart(2, "0");
+  minutesEl.textContent = String(timeLeft.minutes).padStart(2, "0");
+  secondsEl.textContent = String(timeLeft.seconds).padStart(2, "0");
 
+  if (
+    timeLeft.days === 0 &&
+    timeLeft.hours === 0 &&
+    timeLeft.minutes === 0 &&
+    timeLeft.seconds === 0
+  ) {
+    clearInterval(interval);
+  }
+}, 1000);
 
-window.onscroll = function() {
-    let currentScroll = document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
+window.onscroll = function () {
+  let currentScroll =
+    document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
 
-    if (currentScroll > 1300){
-      lastScroll = currentScroll;
-      document.getElementById("toTop").classList.add("show");
-    }else{
-      lastScroll = currentScroll;
-      document.getElementById("toTop").classList.remove("show");
-    }
+  if (currentScroll > 1300) {
+    lastScroll = currentScroll;
+    document.getElementById("toTop").classList.add("show");
+  } else {
+    lastScroll = currentScroll;
+    document.getElementById("toTop").classList.remove("show");
+  }
 };
 
-document.getElementById("toTop").addEventListener("click", () => window.scrollTo(0,0))
+document
+  .getElementById("toTop")
+  .addEventListener("click", () => window.scrollTo(0, 0));
 
+// const playButton = document.getElementById('play-button');
+const toggle = document.getElementById("toggle");
+const audioPlayer = document.getElementById("audio-player");
 
-
-const confirmBtn = document.querySelector(".confirm-btn");
-const guestCount = document.querySelector(".guestCount");
-const guestName = document.querySelector(".guestName");
-
-confirmBtn.addEventListener("click", (e) => {
-  e.preventDefault()
-  console.log("click");
-  console.log(guestName.value);
-  console.log(guestCount.value);
-})
+toggle.addEventListener("change", () => {
+  if (toggle.checked) {
+    audioPlayer.play(); // Երգը միացնել
+  } else {
+    audioPlayer.pause(); // Երգը կանգնեցնել
+    audioPlayer.currentTime = 0; // Սկսել սկզբից
+  }
+});

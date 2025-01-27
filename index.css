@@ -27,6 +27,7 @@ body {
   font-family: "Armenia4";
   color: #353535;
   background-color: #e9e9e9;
+  overflow-x: hidden;
 }
 
 .toTop {
@@ -59,7 +60,7 @@ body {
   opacity: 1;
 }
 .layout {
-  padding: 40px;
+  padding: 0 40px 40px ;
   text-align: center;
 }
 
@@ -68,6 +69,7 @@ main {
 }
 .header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -83,29 +85,16 @@ main {
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-.names {
-  width: 120%;
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: space-between;
-  font-family: "Armenia4";
-}
 
 .name {
   color: #353535;
   font-size: clamp(3.5rem, 5vw, 5.5rem);
 }
 .date {
-  position: absolute;
-  top:  100%;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 4rem;
   font-family: "Armenia";
   font-weight: 800;
+  margin-top: 20px;
 }
 
 section {
@@ -158,25 +147,28 @@ section {
   width: 100%;
   height: 100%;
 }
-.place-photo{
+.place-photo {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .church-photo {
-  background:  linear-gradient(#353535a8, #353535a8), url(./images/St._Gayane_Church.jpg) no-repeat;
+  background: linear-gradient(#353535a8, #353535a8),
+    url(./images/St._Gayane_Church.jpg) no-repeat;
   background-size: cover;
-  background-position: center ;
-  
+  background-position: center;
 }
-.arev-photo{
-  background:  linear-gradient(#353535a8, #353535a8), url(./images/arev.jpg) no-repeat;
+.arev-photo {
+  background: linear-gradient(#353535a8, #353535a8),
+    url(./images/arev.jpg) no-repeat;
   background-size: cover;
-  background-position: center ;
+  background-position: center;
 }
 .how-to-reach {
   background: none;
@@ -186,7 +178,6 @@ section {
   border-radius: 20px;
   border: 2px solid #fff;
 }
-
 
 .countdown-title {
   font-size: 2.5rem;
@@ -262,86 +253,19 @@ iframe {
   margin-top: 50px;
 }
 
-.swiper {
-  max-width: 400px;
-  margin: 50px auto;
-}
-.swiper-slide {
-  width: 100% !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  background: #f3f3f3;
-  max-width: 400px;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-}
-
-.confirm-title {
-  font-size: 2.5rem;
-}
-.confirm-form {
-  max-width: 400px;
-  margin: 20px auto 0;
-  display: flex;
-  /* flex-direction: column; */
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.confirm-form .guestName {
-  background-color: #353535;
-  border: none;
-  padding: 10px;
-  color: #f3f3f3;
-  font-size: 20px;
-  flex: 3 0 100%;
-
-}
-
-.confirm-form .guestName:focus {
-  outline: none;
-}
-
-.confirm-form .guestName::placeholder {
-  color: #f3f3f3;
-}
-.guestCount, .brideOrGroom{
-  background-color: #353535;
-  color: #f3f3f3;
-  padding: 10px;
-  font-size: 20px;
-  flex: 1 0 100px;
-
-}
-.confirm-btn{
-  flex: 2 0 200px;
-  cursor: pointer;
-  background: none;
-  background-color: #353535;
-  color: #f3f3f3;
-  padding: 10px;
-  font-size: 20px;
-}
-
-
-
 table {
   width: 300px;
   margin: 20px auto;
   border-collapse: collapse;
 }
-th, td {
+th,
+td {
   width: 40px;
   height: 40px;
   text-align: center;
   border: 1px solid #ccc;
   color: #000;
   font-size: 25px;
-
 }
 td {
   font-size: 25px;
@@ -364,9 +288,8 @@ th {
   transform: translate(-50%, -50%);
   font-size: 60px;
   -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-	        animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
 }
-
 
 .yesOrNo {
   display: flex;
@@ -412,45 +335,106 @@ th {
   stroke-dashoffset: -262.2723388671875;
 }
 
-
-
-
 @keyframes heartbeat {
   from {
     -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
     -webkit-transform-origin: center center;
-            transform-origin: center center;
+    transform-origin: center center;
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
   10% {
     -webkit-transform: translate(-50%, -50%) scale(0.91);
-            transform: translate(-50%, -50%) scale(0.91);
+    transform: translate(-50%, -50%) scale(0.91);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   17% {
     -webkit-transform: translate(-50%, -50%) scale(0.98);
-            transform: translate(-50%, -50%) scale(0.98);
+    transform: translate(-50%, -50%) scale(0.98);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
   33% {
     -webkit-transform: translate(-50%, -50%) scale(0.87);
-            transform: translate(-50%, -50%) scale(0.87);
+    transform: translate(-50%, -50%) scale(0.87);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   45% {
     -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 }
+.play {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+/* From Uiverse.io by MuhammadHasann */
+.toggle-cont {
+  width: 100px;
+  height: 50px;
+  border-radius: 9999px;
+}
 
+.toggle-cont .toggle-input {
+  display: none;
+}
 
+.toggle-cont .toggle-label {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 6px;
+  width: 100%;
+  height: 100%;
+  background: #272727;
+  border-radius: 9999px;
+  box-sizing: content-box;
+  box-shadow: 0px 0px 16px -8px #fefefe;
+}
+
+.toggle-cont .toggle-label .cont-label-play {
+  position: relative;
+  width: 50px;
+  aspect-ratio: 1 / 1;
+  background: #5e5e5e;
+  border-radius: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.toggle-cont .toggle-input:checked + .toggle-label .cont-label-play {
+  background: #f43f5e;
+  transform: translateX(50px);
+}
+
+.toggle-cont .toggle-label .label-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 24px;
+  aspect-ratio: 1 / 1;
+  background: #fefefe;
+  border-radius: 4px;
+  clip-path: polygon(25% 0, 75% 50%, 25% 100%, 25% 51%);
+  transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
+.toggle-cont .toggle-input:checked + .toggle-label .label-play {
+  width: 20px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+#audio-player {
+  display: none;
+}
 @media screen and (max-width: 700px) {
   .swiper {
     max-width: 300px;

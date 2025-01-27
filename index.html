@@ -22,17 +22,30 @@
     </div>
     <div class="layout">
         <header class="header" id="top">
+            <div class="play">
+                <div class="toggle-cont">
+                    <input class="toggle-input" id="toggle" name="toggle" type="checkbox" />
+                    <label class="toggle-label" for="toggle">
+                        <div class="cont-label-play">
+                            <span class="label-play"></span>
+                        </div>
+                    </label>
+                </div>
 
+                <audio controls id="audio-player" loop>
+                    <source src="./Music/Frank Sinatra   I Love You Baby [ ezmp3 (mp3cut.net).mp3">
+                </audio>
+            </div>
+
+            <div class="name1 name">Արման</div>
             <div class="photo">
                 <img src="./images/1.JPG" alt="">
-                <div class="names">
-                    <div class="name1 name">Արման</div>
-                    <div class="name2 name">Մանե</div>
-                </div>
-                <div class="date">
-                    07.08.25
-                </div>
             </div>
+            <div class="name2 name">Մանե</div>
+            <div class="date">
+                07.08.25
+            </div>
+
 
 
         </header>
@@ -141,21 +154,6 @@
                         գտնվելու մեր կյանքի լուսավոր օրվան:
                     </h4>
                 </div>
-
-                <div class="swiper" data-aos="fade-left" data-aos-anchor-placement="top-center">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./images/IMG_0218.JPG" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./images/IMG_0219.JPG" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./images/IMG_0236.JPG" alt="">
-                        </div>
-                    </div>
-
-                </div>
                 <div class="line" data-aos="fade-up" data-aos-anchor-placement="top-center"></div>
                 <div class="place">
                     <div class="place-img" data-aos="fade-up" data-aos-anchor-placement="top-center">
@@ -165,119 +163,59 @@
                     <div class="time" data-aos="fade-up" data-aos-anchor-placement="top-center">15:00</div>
                     <div class="city" data-aos="fade-up" data-aos-anchor-placement="top-center">Սուրբ Գայանե եկեղեցի
                     </div>
-
                 </div>
-    </div>
-    <div class="place-photo church-photo" data-aos="fade-up" data-aos-anchor-placement="top-center">
-        <a href="https://yandex.com/maps/-/CHadjAJn" target="_blank" class="how-to-reach">
-            Ինչպես հասնել
-        </a>
-    </div>
-    <div class="line" data-aos="fade-up" data-aos-anchor-placement="top-center"></div>
-
-    <div class="place layout">
-        <div class="place-img" data-aos="fade-up" data-aos-anchor-placement="top-center">
-            <img src="./images/glasses.png" alt="glasses">
-        </div>
-        <h3 class="title2" data-aos="fade-up" data-aos-anchor-placement="top-center">Խնջույք</h3>
-        <div class="time" data-aos="fade-up" data-aos-anchor-placement="top-center">17:00</div>
-        <div class="city" data-aos="fade-up" data-aos-anchor-placement="top-center">Arev Hall</div>
-
-    </div>
-    <div class="place-photo arev-photo" data-aos="fade-up" data-aos-anchor-placement="top-center">
-        <a href="https://yandex.com/maps/-/CHaZ7Dl1" target="_blank" class="how-to-reach">
-            Ինչպես հասնել
-        </a>
-    </div>
-    <div class="layout">
-        <div class="place">
-            <div class="place-img" data-aos="fade-up" data-aos-anchor-placement="top-center">
-                <img src="./images/car.png" alt="glasses">
             </div>
-            <h3 class="title2" data-aos="fade-up" data-aos-anchor-placement="top-center">Ավարտ</h3>
-            <div class="time" data-aos="fade-up" data-aos-anchor-placement="top-center">00:00</div>
-        </div>
-
-        <div class="line" data-aos="fade-up" data-aos-anchor-placement="top-center"></div>
-
-        <div class="text text2 layout" data-aos="fade-up" data-aos-anchor-placement="top-center">
-            <h3>«Արդ, մնում են այս երեքը՝ հավատ, հույս, սեր, և սրանցից մեծագույնը սերն է» </h3>
-
-        </div>
-
-
-        <div class="line" data-aos="fade-up" data-aos-anchor-placement="top-center"></div>
-        <div class="confirm">
-            <div class="confirm-title">Խնդրում ենք հաստատել ձեր ներկայությունը</div>
-            <form action="GET" class="confirm-form">
-
-                <div class="yesOrNo">
-                    <!-- From Uiverse.io by SelfMadeSystem -->
-                    <label class="container" for="check">
-                        <input type="radio" value="yes" name="check" id="check">
-                        <svg viewBox="0 0 64 64" height="2em" width="2em">
-                            <path
-                                d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16"
-                                pathLength="575.0541381835938" class="path"></path>
-                        </svg>
-                        <span>Գալու եմ</span>
-                    </label>
-                    <div class="vLine"></div>
-                    <label class="container">
-                        <input type="radio" value="no" name="check" id="check">
-                        <svg viewBox="0 0 64 64" height="2em" width="2em">
-                            <path
-                                d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16"
-                                pathLength="575.0541381835938" class="path"></path>
-                        </svg>
-                        <span> Չեմ գալու</span>
-                    </label>
+                <div class="place-photo church-photo" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                    <a href="https://yandex.com/maps/-/CHadjAJn" target="_blank" class="how-to-reach">
+                        Ինչպես հասնել
+                    </a>
                 </div>
 
-                <input type="text" class="guestName" name="guestName" placeholder="Գրեք Ձեր անուն ազգանունը">
-                <select name="brideOrGroom" id="" class="brideOrGroom">
-                    <option value="bride">Փեսայի կողմից</option>
-                    
-                    <option value="groom">հարսի կողմից</option>
-                </select>
-                <select name="guestCount" id="" class="guestCount">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select>
-                <textarea rows="5" class="guestName" name="guestName" placeholder="Գրեք հյուրերի անուն ազգանունը"></textarea>
+                <div class="line" data-aos="fade-up" data-aos-anchor-placement="top-center"></div>
 
-                <button class="confirm-btn">
-                    Հաստատել
-                </button>
+                <div class="place layout">
+                    <div class="place-img" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                        <img src="./images/glasses.png" alt="glasses">
+                    </div>
+                    <h3 class="title2" data-aos="fade-up" data-aos-anchor-placement="top-center">Հանդիսություն</h3>
+                    <div class="time" data-aos="fade-up" data-aos-anchor-placement="top-center">17:00</div>
+                    <div class="city" data-aos="fade-up" data-aos-anchor-placement="top-center">Arev Հանդիսությունների
+                        սրահ</div>
 
-            </form>
+                </div>
+                <div class="place-photo arev-photo" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                    <a href="https://yandex.com/maps/-/CHaZ7Dl1" target="_blank" class="how-to-reach">
+                        Ինչպես հասնել
+                    </a>
+                </div>
+                <div class="line" data-aos="fade-up" data-aos-anchor-placement="top-center"></div>
 
+                <div class="layout">
+                    <div class="place">
+                        <div class="place-img" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                            <img src="./images/car.png" alt="glasses">
+                        </div>
+                        <h3 class="title2" data-aos="fade-up" data-aos-anchor-placement="top-center">Ավարտ</h3>
+                        <div class="time" data-aos="fade-up" data-aos-anchor-placement="top-center">00:00</div>
+                    </div>
 
-        </div>
-        </section>
+                    <div class="line" data-aos="fade-up" data-aos-anchor-placement="top-center"></div>
+
+                    <div class="text text2 layout" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                        <h3>«Արդ, մնում են այս երեքը՝ հավատ, հույս, սեր, և սրանցից մեծագույնը սերն է» </h3>
+
+                    </div>
+                </div>
+
+            </section>
 
         </main>
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const swiper = new Swiper('.swiper', {
-                loop: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                autoplay: true,
-                effect: "cards"
-            });
-        });
     </script>
 </body>
 
