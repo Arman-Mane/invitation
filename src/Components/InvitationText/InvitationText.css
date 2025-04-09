@@ -1,0 +1,6 @@
+.invitationText {
+    font-family: "ArTarumianBarakU-Bold";
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 2rem);
+    padding: 0 20px;
+  }

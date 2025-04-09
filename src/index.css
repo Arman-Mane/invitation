@@ -1,0 +1,54 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #dbdbdb7d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+@font-face {
+  font-family: "BraindAmanor";
+  src: url(./assets/font/BraindAmanor.otf);
+}
+@font-face {
+  font-family: "ArTarumianBarakU-Bold";
+  src: url(./assets/font/ArTarumianBarakU-Bold.ttf);
+}
+
+@font-face {
+  font-family: "ArTarumianBarakU-Regular";
+  src: url(./assets/font/ArTarumianBarakU-Regular.ttf);
+}
+@font-face {
+  font-family: "ArmCoronetU";
+  src: url(./assets/font/ArmCoronetU.ttf);
+}
+@font-face {
+  font-family: "ArmeniapediaJhapaven";
+  src: url(./assets/font/ArmeniapediaJhapaven.ttf);
+}
+@font-face {
+  font-family: "CosiArm";
+  src: url(./assets/font/CosiArm.ttf);
+}
+@font-face {
+  font-family: "Dzeragir";
+  src: url(./assets/font/Dzeragir-Handdrawn.otf);
+}
+@font-face {
+  font-family: "SHK_Dzeragir";
+  src: url(./assets/font/SHK_Dzeragir.otf);
+}
+@font-face {
+  font-family: "GreatVibes-Regular";
+  src: url(./assets/font/GreatVibes-Regular.ttf);
+}

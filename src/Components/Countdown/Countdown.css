@@ -1,0 +1,32 @@
+.countdownBox {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.countdown-title {
+  font-size: 2.5rem;
+  text-align: start;
+}
+#countdown {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  /* font-family: ""; */
+}
+#countdown p {
+  font-weight: 700;
+  font-size: clamp(3rem, -1.5rem + 10vw, 5rem);
+}
+
+#countdown span {
+  font-size: clamp(2rem, -1.5rem + 10vw, 3rem);
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
