@@ -1,0 +1,79 @@
+
+#calendar {
+    text-align: center;
+}
+#calendar table {
+    width: 300px;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  #calendar th,
+  #calendar td {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    color: #000;
+    font-size: 25px;
+  }
+  #calendar td {
+    font-size: 25px;
+  }
+  #calendar th {
+    font-size: 18px;
+  }
+  #calendar th {
+    background-color: #f0f0f0;
+  }
+  
+  #calendar .seven {
+    position: relative;
+    color: red;
+    font-weight: 700;
+    /* font-size: 2rem; */
+  }
+  #calendar .seven .heart{
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+
+
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: translate(-50%, -50%) scale(1);
+      transform: translate(-50%, -50%) scale(1);
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: translate(-50%, -50%) scale(0.91);
+      transform: translate(-50%, -50%) scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: translate(-50%, -50%) scale(0.98);
+      transform: translate(-50%, -50%) scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: translate(-50%, -50%) scale(0.87);
+      transform: translate(-50%, -50%) scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: translate(-50%, -50%) scale(1);
+      transform: translate(-50%, -50%) scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  }

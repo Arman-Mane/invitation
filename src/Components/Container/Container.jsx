@@ -1,4 +1,5 @@
 import React from 'react'
+import Calendar from '../Calendar/Calendar'
 import Confirm from '../Confirm/Confirm'
 import Countdown from '../Countdown/Countdown'
 import FooterText from '../FooterText/FooterText'
@@ -14,6 +15,7 @@ const Container = () => {
         <InvitationText />
         <Line />
         <Countdown targetDate={"2025-08-07T15:00"}/>
+        <Calendar />
         <Line />
         <Program />
         <Line />

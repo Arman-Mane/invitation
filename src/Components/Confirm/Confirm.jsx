@@ -4,8 +4,8 @@ const Confirm = () => {
   return (
     <footer>
       <h2>Հաստատեք ձեր ներկայությունը</h2>
-      <div class="confirm">
-        <div class="input">
+      <div className="confirm">
+        <div className="input">
           <input
             type="text"
             required
@@ -13,20 +13,20 @@ const Confirm = () => {
             placeholder="Գրեք ձեր անուն ազգանունը"
           />
         </div>
-        <div class="yesNo">
-          <label for="yes">
+        <div className="yesNo">
+          <label htmlFor="yes">
             
             <input type="radio" required value="yes" name="yesno" id="yes" />
             Գալու եմ
           </label>
-          <label for="no">
+          <label htmlFor="no">
             
             <input type="radio" required value="no" name="yesno" id="no" /> Չեմ
             կարող գալ
           </label>
         </div>
 
-        <div class="select">
+        <div className="select">
           <h3>Նշեք հյուրերի քանակը</h3>
           <select name="count" id="guestCount" disabled>
             <option value="1">1</option>
@@ -35,7 +35,7 @@ const Confirm = () => {
             <option value="4">4</option>
           </select>
         </div>
-        <button class="confBtn" id="sendEmail">
+        <button className="confBtn" id="sendEmail">
           Հաստատել
         </button>
       </div>
