@@ -48,6 +48,9 @@ const Program = () => {
         </div>
       </div>
 
+      {/* <div className="message">
+        <h2>Խնդրում ենք <br /> եկեղեցի և հանդիսությունների սրահ <br /> ներկայանալ նշված ժամից 15 րոպե շուտ։</h2>
+      </div> */}
       <Line />
 
       <div className="programItem">
@@ -59,6 +62,8 @@ const Program = () => {
 
      
       </div>
+
+     
     </div>
   );
 };

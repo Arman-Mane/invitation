@@ -7,4 +7,5 @@
 
 body{
   font-family: "SHK_Dzeragir";
+  user-select: none;
 }
