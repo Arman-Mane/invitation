@@ -4,9 +4,9 @@ const InspectElemDis = () => {
   useEffect(() => {
     const handleKeyDown = (e) => {
       // Ctrl + Shift + I;
-      if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") {
-        e.preventDefault();
-      }
+      // if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") {
+      //   e.preventDefault();
+      // }
 
       // F12 (open DevTools)
       if (e.key === "F12") {

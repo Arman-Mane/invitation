@@ -1,19 +1,17 @@
 import { useEffect, useRef, useState } from "react";
-import audio from "../../assets/audio/audio.m4a"
+import audio from "../../assets/audio/audio.m4a";
 
 const BackgroundMusic = () => {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
-
   useEffect(() => {
     const playMusic = () => {
-      if (audioRef.current && !isPlaying) {
-        audioRef.current.play().then(() => {
-          setIsPlaying(true);
-        }).catch(err => {
-          console.log("Autoplay blocked:", err);
-        });
-      }
+      if (audioRef.current && !audioRef.current.paused) return;
+
+      audioRef.current
+        .play()
+        .then(() => setIsPlaying(true))
+        .catch((err) => console.log("Autoplay blocked:", err));
     };
 
     window.addEventListener("click", playMusic, { once: true });
@@ -21,7 +19,7 @@ const BackgroundMusic = () => {
     return () => {
       window.removeEventListener("click", playMusic);
     };
-  }, [isPlaying]);
+  }, []);
 
   return (
     <audio ref={audioRef} loop>
