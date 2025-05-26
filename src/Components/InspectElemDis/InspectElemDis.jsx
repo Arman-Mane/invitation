@@ -3,7 +3,7 @@ import { useEffect } from "react";
 const InspectElemDis = () => {
   useEffect(() => {
     const handleKeyDown = (e) => {
-      // Ctrl + Shift + I
+      // Ctrl + Shift + I;
       if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") {
         e.preventDefault();
       }
@@ -17,7 +17,7 @@ const InspectElemDis = () => {
     window.addEventListener("keydown", handleKeyDown);
     document.addEventListener("mousedown", (e) => {
       e.preventDefault();
-    })
+    });
     document.addEventListener("contextmenu", (e) => {
       e.preventDefault();
     });

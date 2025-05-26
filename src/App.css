@@ -1,11 +1,26 @@
 /* #root { */
-  /* max-width: 1280px; */
-  /* margin: 0 auto; */
-  /* padding: 2rem; */
-  /* text-align: center; */
+/* max-width: 1280px; */
+/* margin: 0 auto; */
+/* padding: 2rem; */
+/* text-align: center; */
 /* } */
 
-body{
+body {
   font-family: "SHK_Dzeragir";
   user-select: none;
+  position: sticky;
+  z-index: 1000;
+}
+
+canvas {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -100 !important;
+}
+.particles {
+  z-index: -1000 !important;
+}
+.backdrop-filter {
+  backdrop-filter: blur(8px);
 }

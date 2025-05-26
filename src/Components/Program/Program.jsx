@@ -37,7 +37,7 @@ const Program = () => {
         <div className="programItem_time">17:00</div>
         <div className="programItem_place">Արև հանդիսությունների սրահ</div>
 
-        <div className="place-photo arev-photo">
+        <div className="place-photo restoran-photo">
           <a
             href="https://yandex.com/maps/-/CHaZ7Dl1"
             target="_blank"
