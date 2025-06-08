@@ -14,7 +14,7 @@ const BackgroundMusic = () => {
         .catch((err) => console.log("Autoplay blocked:", err));
     };
 
-    // window.addEventListener("click", playMusic, { once: true });
+    window.addEventListener("click", playMusic, { once: true });
 
     return () => {
       window.removeEventListener("click", playMusic);
