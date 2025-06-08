@@ -10,14 +10,13 @@ import { useEffect } from "react";
 function App() {
 
   useEffect(() => {
-
     window.scrollTo({
       top: 0
     })
   }, [])
   return (
     <>
-      <ParticleBackground className="particles" />
+      {/* <ParticleBackground id="particles" /> */}
       <InspectElemDis />
       <Header />
       <Container />

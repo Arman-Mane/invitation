@@ -64,12 +64,12 @@
   /* Վերև և ներքև սահմաններ */
   .card-top-border {
     height: 0.5rem;
-    background: linear-gradient(90deg, #fb7185, #f472b6, #a855f7);
+    /* background: linear-gradient(90deg, #fb7185, #f472b6, #a855f7); */
   }
   
   .card-bottom-border {
     height: 0.25rem;
-    background: linear-gradient(90deg, #fda4af, #f9a8d4, #c084fc);
+    /* background: linear-gradient(90deg, #fda4af, #f9a8d4, #c084fc); */
     opacity: 0.5;
   }
   
@@ -142,7 +142,7 @@
   
   .heart-bg {
     position: relative;
-    background: linear-gradient(135deg, #fce7f3, #f9a8d4);
+    /* background: linear-gradient(135deg, #fce7f3, #f9a8d4); */
     padding: 1.5rem;
     border-radius: 50%;
   }
@@ -160,9 +160,10 @@
   }
   
   .main-title {
-    font-size: 1.875rem;
+    font-size: 2rem;
     font-weight: bold;
-    background: linear-gradient(90deg, #dc2626, #e11d48);
+    /* background: linear-gradient(90deg, #dc2626, #e11d48); */
+    background: linear-gradient(90deg, #565b64, #000);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -178,7 +179,7 @@
   }
   
   .subtitle {
-    font-size: 1.125rem;
+    font-size: 1.35rem;
     color: #374151;
     font-weight: 500;
   }
@@ -206,7 +207,7 @@
   .main-text {
     color: #4b5563;
     line-height: 1.625;
-    font-size: 1rem;
+    font-size: 1.45rem;
     margin-bottom: 0.75rem;
   }
   
@@ -224,7 +225,7 @@
   }
   
   .gift-message {
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     color: #6b7280;
     font-style: italic;
   }
@@ -233,7 +234,7 @@
   .open-button {
     position: relative;
     width: 100%;
-    background: linear-gradient(90deg, #e11d48, #ec4899);
+    background: linear-gradient(135deg, #979797, #000);
     color: white;
     font-weight: 600;
     padding: 1rem 2rem;
@@ -247,7 +248,7 @@
   }
   
   .open-button:hover {
-    background: linear-gradient(90deg, #be185d, #db2777);
+    /* background: linear-gradient(90deg, #be185d, #db2777); */
     transform: scale(1.05);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
   }
@@ -290,7 +291,7 @@
   /* Hint տեքստ */
   .hint-text {
     margin-top: 1rem;
-    font-size: 0.75rem;
+    font-size: 1rem;
     color: #9ca3af;
     opacity: 0.75;
   }
