@@ -1,0 +1,16 @@
+body {
+  font-family: "SHK_Dzeragir";
+  /* user-select: none; */
+  position: sticky;
+  z-index: 1000;
+}
+
+
+.backdrop-filter {
+  backdrop-filter: blur(8px);
+}
+
+::selection {
+  background-color: transparent;
+  color: #000;
+}
