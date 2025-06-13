@@ -9,7 +9,7 @@ import Tables from "../Pages/Tables/Tables";
 const AppRouter = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/invitation" element={<Home />} />
       <Route path="/guests" element={<Guests />} />
       <Route path="/tables" element={<Tables />} />
       <Route path="/gallery" element={<h1>nkarner</h1>} />
