@@ -29,27 +29,30 @@ const Confirm = ({ setShowConfirmModal }) => {
   const handleConfirmSubmit = async () => {
     setIsSubmitting(true);
 
-    const data = {
-      name: formData.name,
-      attending: formData.attending,
-      guestCount: formData.guestCount,
-    };
-
     try {
-      await fetch("https://script.google.com/macros/s/AKfycbxz3Vhwmhb7viH0E-S0Swiw9wxBWduuQQlUqGhMzfMjXrEdZ-OkhXlIvNDybQxVO8nxUw/exec", {
-        method: "POST",
-        mode: "no-cors", // կարևոր է CORS սխալներից խուսափելու համար
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded" ,
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          attending: formData.attending,
-          guestCount: formData.guestCount,
-        }),
-      });
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbxz3Vhwmhb7viH0E-S0Swiw9wxBWduuQQlUqGhMzfMjXrEdZ-OkhXlIvNDybQxVO8nxUw/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            attending:
+              formData.attending === "yes"
+                ? formData.guestCount > 1
+                  ? "Գալու ենք"
+                  : "Գալու եմ"
+                : "չեմ գալու",
+            guestCount: formData.attending === "yes" ? formData.guestCount : "",
+          }),
+        }
+      );
 
       console.log("Տվյալները ուղարկված են");
+      setIsSubmitted(true);
     } catch (err) {
       console.error("Սխալ:", err);
     } finally {
@@ -152,9 +155,7 @@ const Confirm = ({ setShowConfirmModal }) => {
         </div>
         <div className="wedding-container">
           <div className="wedding-form-card">
-            {/* Header */}
             <div className="wedding-header">
-              {/* Heart Icon */}
               <svg
                 className="heart-icon"
                 fill="currentColor"
@@ -169,9 +170,7 @@ const Confirm = ({ setShowConfirmModal }) => {
               </p>
             </div>
 
-            {/* Form Fields */}
             <form onSubmit={handleConfirmSubmit}>
-              {/* Name Field */}
               <div className="form-group">
                 <label htmlFor="name" className="form-label">
                   Անուն Ազգանուն *
@@ -187,18 +186,14 @@ const Confirm = ({ setShowConfirmModal }) => {
                 />
               </div>
 
-              {/* Attending Field */}
               <div className="form-group">
-                {/* <label className="form-label">Կգա՞ք հարսանիքին *</label> */}
                 <div className="radio-group">
-                  {/* Yes Option */}
                   <div
                     onClick={() => handleAttendingChange("yes")}
                     className={`radio-option ${
                       formData.attending === "yes" ? "selected-yes" : ""
                     }`}
                   >
-                    {/* Check Icon */}
                     <svg
                       className={`radio-icon yes ${
                         formData.attending === "yes" ? "" : "radio-icon"
@@ -217,7 +212,6 @@ const Confirm = ({ setShowConfirmModal }) => {
                     <span className="radio-text">Գալու եմ</span>
                   </div>
 
-                  {/* No Option */}
                   <div
                     onClick={() => handleAttendingChange("no")}
                     className={`radio-option ${
@@ -236,11 +230,9 @@ const Confirm = ({ setShowConfirmModal }) => {
                 </div>
               </div>
 
-              {/* Guest Count Field - Show only if attending */}
               {formData.attending === "yes" && (
                 <div className="form-group guest-count-field">
                   <label htmlFor="guestCount" className="form-label">
-                    {/* Users Icon */}
                     <svg
                       className="guest-label-icon"
                       fill="none"
@@ -263,7 +255,7 @@ const Confirm = ({ setShowConfirmModal }) => {
                     onChange={handleInputChange}
                     className="form-select"
                   >
-                    {[1, 2, 3, 4].map((num) => (
+                    {[1, 2, 3, 4, 5].map((num) => (
                       <option key={num} value={num}>
                         {num} {num === 1 ? "հյուր" : "հյուր"}
                       </option>
@@ -339,9 +331,6 @@ const Confirm = ({ setShowConfirmModal }) => {
           </div>
         </div>
       </div>
-
-      {/* Confirmation Modal */}
-      {/* {showConfirmModal && <ConfirmationModal />} */}
     </>
   );
 };
