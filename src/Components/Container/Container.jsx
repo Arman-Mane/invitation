@@ -23,8 +23,10 @@ const Container = () => {
       <FooterText />
       <Line />
 
-      <div className="modalBtn" onClick={() => setShowConfirmModal(true)}>
-        Հաստատել ձեր ներկայությունը
+      <div className="footer">
+        <div className="modalBtn" onClick={() => setShowConfirmModal(true)}>
+          Հաստատել ձեր ներկայությունը
+        </div>
       </div>
       {showConfirmModal && (
         <Confirm setShowConfirmModal={setShowConfirmModal} />

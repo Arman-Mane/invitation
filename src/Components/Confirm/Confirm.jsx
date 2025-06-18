@@ -231,7 +231,7 @@ const Confirm = ({ setShowConfirmModal }) => {
                           : "radio-icon no-unselected"
                       }
                     ></div>
-                    <span className="radio-text">Ցավոք չեմ կարող գալ</span>
+                    <span className="radio-text">Չեմ կարող գալ</span>
                   </div>
                 </div>
               </div>

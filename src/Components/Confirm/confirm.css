@@ -36,6 +36,7 @@
 }
 
 .wedding-container {
+  width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -67,6 +68,7 @@
 
 .wedding-subtitle {
   color: #6b7280;
+  font-size: 1.4rem;
 }
 
 .heart-icon {
@@ -101,7 +103,7 @@
 
 .form-label {
   display: block;
-  font-size: 0.875rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #374151;
   margin-bottom: 0.5rem;
@@ -152,6 +154,7 @@
   border-radius: 0.75rem;
   transition: all 0.2s;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .radio-option:hover {
@@ -316,7 +319,7 @@
 .footer-text {
   margin-top: 1.5rem;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   color: #6b7280;
 }
 
