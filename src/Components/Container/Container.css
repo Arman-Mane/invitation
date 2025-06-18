@@ -1,0 +1,24 @@
+main {
+  /* padding: 20px; */
+  margin: 40px 0;
+  position: relative;
+  z-index: 1000;
+}
+
+.modalBtn {
+  max-width: 400px;
+  background: linear-gradient(135deg, #ecdb48 0%, #eab333 100%);
+  padding: 12px 24px;
+  border: none;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin: 0 auto; 
+  text-align: center;
+  color: #000;
+}
+.modalBtn:hover {
+    transform: scale(1.1);
+}
+

@@ -1,0 +1,348 @@
+.modal2-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  padding: 1rem;
+}
+
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  animation: float linear infinite;
+}
+
+.particle-heart {
+  width: 1rem;
+  height: 1rem;
+  color: #f9a8d4;
+  opacity: 0.3;
+}
+
+.wedding-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.wedding-form-card {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  /* max-width: 28rem;
+  width: 100%; */
+  width: 28rem;
+}
+
+.wedding-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.wedding-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.wedding-subtitle {
+  color: #6b7280;
+}
+
+.heart-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #ec4899;
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+
+.heart-small {
+  width: 2rem;
+  height: 2rem;
+  color: #ec4899;
+  margin: 0 auto;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #ec4899;
+}
+
+.form-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  background: white;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #ec4899;
+}
+
+.radio-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.radio-option {
+  position: relative;
+  cursor: pointer;
+  padding: 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.radio-option:hover {
+  border-color: #d1d5db;
+}
+
+.radio-option.selected-yes {
+  border-color: #ec4899;
+  background-color: #fdf2f8;
+  color: #be185d;
+}
+
+.radio-option.selected-no {
+  border-color: #6b7280;
+  background-color: #f9fafb;
+  color: #374151;
+}
+
+.radio-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 auto 0.25rem auto;
+  display: block;
+}
+
+.radio-icon.yes {
+  color: #ec4899;
+}
+
+.radio-icon.no-selected {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 auto 0.25rem auto;
+  border-radius: 50%;
+  border: 2px solid #6b7280;
+  background-color: #6b7280;
+}
+
+.radio-icon.no-unselected {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 auto 0.25rem auto;
+  border-radius: 50%;
+  border: 2px solid #9ca3af;
+}
+
+.radio-text {
+  font-weight: 500;
+}
+
+.guest-count-field {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.guest-label-icon {
+  width: 1rem;
+  height: 1rem;
+  display: inline;
+  margin-right: 0.25rem;
+}
+
+.submit-button,
+.close-button {
+  width: 100%;
+  background: linear-gradient(135deg, #ec4899 0%, #9333ea 100%);
+  color: white;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+.close-button {
+  background: linear-gradient(135deg, #ecdb48 0%, #eab333 100%);
+  margin-top: 20px;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #db2777 0%, #7c3aed 100%);
+  transform: translateY(-1px);
+}
+
+.submit-button:disabled {
+  background: linear-gradient(135deg, #d1d5db 0%, #9ca3af 100%);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.button-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.loading-icon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.success-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.success-card {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  max-width: 28rem;
+  width: 100%;
+  text-align: center;
+}
+
+.success-icon {
+  width: 4rem;
+  height: 4rem;
+  color: #10b981;
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+
+.success-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.success-message {
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.footer-heart {
+  width: 1rem;
+  height: 1rem;
+  color: #f472b6;
+  display: inline;
+  margin-right: 0.25rem;
+}
+
+@media (max-width: 480px) {
+  .wedding-form-card {
+    padding: 1.5rem;
+    margin: 0.5rem;
+  }
+
+  .wedding-title {
+    font-size: 1.5rem;
+  }
+
+  .radio-group {
+    gap: 0.5rem;
+  }
+
+  .radio-option {
+    padding: 0.75rem;
+  }
+}
