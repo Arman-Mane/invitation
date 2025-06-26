@@ -17,7 +17,7 @@ const BackgroundMusic = forwardRef((props, ref) => {
   }));
 
   return (
-    <audio ref={audioRef} loop>
+    <audio ref={audioRef} loop playsInline >
       <source src={audio} type="audio/mp4" />
       Ձեր բրաուզերը չի աջակցում աուդիո ֆորմատին։
     </audio>
