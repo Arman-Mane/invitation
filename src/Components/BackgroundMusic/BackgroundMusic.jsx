@@ -1,5 +1,5 @@
 import { forwardRef, useImperativeHandle, useRef } from "react";
-import audio from "../../assets/audio/audio.mp3";
+import audio from "../../assets/audio/audio.m4a";
 
 const BackgroundMusic = forwardRef((props, ref) => {
   const audioRef = useRef(null);
