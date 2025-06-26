@@ -26,7 +26,7 @@ const Confirm = ({ setShowConfirmModal }) => {
     }));
   };
 
-  const handleConfirmSubmit = async () => {
+  const handleConfirmSubmit = async (e) => {
     setIsSubmitting(true);
 
     try {
@@ -40,12 +40,7 @@ const Confirm = ({ setShowConfirmModal }) => {
           },
           body: JSON.stringify({
             name: formData.name,
-            attending:
-              formData.attending === "yes"
-                ? formData.guestCount > 1
-                  ? "Գալու ենք"
-                  : "Գալու եմ"
-                : "չեմ գալու",
+            attending: formData.attending === "yes" ? "Այո" : "Ոչ",
             guestCount: formData.attending === "yes" ? formData.guestCount : "",
           }),
         }
@@ -53,6 +48,10 @@ const Confirm = ({ setShowConfirmModal }) => {
 
       console.log("Տվյալները ուղարկված են");
       setIsSubmitted(true);
+      window.scrollTo({
+        top:0,
+        behavior: "smooth"
+      })
     } catch (err) {
       console.error("Սխալ:", err);
     } finally {
@@ -60,13 +59,14 @@ const Confirm = ({ setShowConfirmModal }) => {
     }
   };
 
-  const handleSubmitClick = () => {
+  const handleSubmitClick = (e) => {
+    e.preventDefault();
     if (!formData.name || !formData.attending) {
       alert("Խնդրում ենք լրացնել բոլոր պարտադիր դաշտերը");
       return;
     }
-    setIsSubmitted(true);
     handleConfirmSubmit();
+    // setIsSubmitted(true);
   };
 
   const handleCancelSubmit = () => {
@@ -170,7 +170,7 @@ const Confirm = ({ setShowConfirmModal }) => {
               </p>
             </div>
 
-            <form onSubmit={handleConfirmSubmit}>
+            <form>
               <div className="form-group">
                 <label htmlFor="name" className="form-label">
                   Անուն Ազգանուն *
@@ -182,7 +182,7 @@ const Confirm = ({ setShowConfirmModal }) => {
                   value={formData.name}
                   onChange={handleInputChange}
                   className="form-input"
-                  placeholder="Գրեք ձեր ամբողջական անունը"
+                  placeholder="Գրեք ձեր անունը"
                 />
               </div>
 
@@ -266,8 +266,13 @@ const Confirm = ({ setShowConfirmModal }) => {
 
               {/* Submit Button */}
               <button
-                onClick={(e) => handleConfirmSubmit(e)}
-                disabled={!formData.name || !formData.attending || isSubmitting}
+                onClick={(e) => handleSubmitClick(e)}
+                disabled={isSubmitting}
+                style={{
+                  background: `${
+                    !formData?.name || !formData.attending ? "grey" : ""
+                  }`,
+                }}
                 className="submit-button"
               >
                 {isSubmitting ? (

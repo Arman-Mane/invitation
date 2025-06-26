@@ -1,0 +1,88 @@
+
+/* Focus outline */
+:focus-visible {
+  outline: 2px solid aqua; /* Change dynamically with JS if needed */
+  outline-offset: 4px;
+}
+
+/* Layout */
+.button-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 50px 0;
+
+}
+
+.button {
+  font-size: 1.5rem;
+  border-radius: 99em;
+  padding: 0;
+  border: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  cursor: pointer;
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: color 0.15s ease, width 0.25s ease-out;
+  position: relative;
+}
+
+.button--play {
+  width: 4.5rem;
+  height: 4.5rem;
+  position: relative;
+}
+
+.button--play::after {
+  content: "";
+  display: block;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  z-index: -1;
+  left: -3px;
+  top: -3px;
+  position: absolute;
+  background-image: conic-gradient(transparent, aqua);
+  border-radius: 99em;
+  opacity: 0;
+}
+
+.button--play .ph-play,
+.button--play .ph-pause {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  transition: opacity 0.15s ease, transform 0.25s ease;
+}
+
+.button--play .ph-play {
+  opacity: 1;
+}
+
+.button--play .ph-pause {
+  opacity: 0;
+  transform: rotate(0);
+}
+
+.button--play.is-active .ph-play {
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+.button--play.is-active .ph-pause {
+  opacity: 1;
+  transform: rotate(180deg);
+}
+
+.button--play.is-active::after {
+  opacity: 1;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

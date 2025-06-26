@@ -1,7 +1,9 @@
 import "./App.css";
 import InspectElemDis from "./Components/InspectElemDis/InspectElemDis";
 import { useEffect } from "react";
-import AppRouter from "./Router/AppRouter";
+import Header from "./Components/Header/Header";
+import Container from "./Components/Container/Container";
+import InviteModal from "./Components/InviteModal/IniteModal";
 
 function App() {
   useEffect(() => {
@@ -11,7 +13,9 @@ function App() {
   }, []);
   return (
     <>
-      <AppRouter />
+      <Header />
+      <Container />
+      <InviteModal />
       <InspectElemDis />
     </>
   );

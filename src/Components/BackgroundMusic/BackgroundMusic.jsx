@@ -1,32 +1,27 @@
-import { useEffect, useRef, useState } from "react";
-import audio from "../../assets/audio/audio.m4a";
+import { forwardRef, useImperativeHandle, useRef } from "react";
+import audio from "../../assets/audio/A Thousand Years .mp3";
 
-const BackgroundMusic = () => {
+const BackgroundMusic = forwardRef((props, ref) => {
   const audioRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  useEffect(() => {
-    const playMusic = () => {
-      if (audioRef.current && !audioRef.current.paused) return;
 
-      audioRef.current
-        .play()
-        .then(() => setIsPlaying(true))
-        .catch((err) => console.log("Autoplay blocked:", err));
-    };
-
-    window.addEventListener("click", playMusic, { once: true });
-
-    return () => {
-      window.removeEventListener("click", playMusic);
-    };
-  }, []);
+  useImperativeHandle(ref, () => ({
+    play: () => {
+      if (audioRef.current) audioRef.current.play();
+    },
+    pause: () => {
+      if (audioRef.current) audioRef.current.pause();
+    },
+    isPlaying: () => {
+      return audioRef.current && !audioRef.current.paused;
+    },
+  }));
 
   return (
     <audio ref={audioRef} loop>
-      <source src={audio} type="audio/mpeg" />
+      <source src={audio} type="audio/mp4" />
       Ձեր բրաուզերը չի աջակցում աուդիո ֆորմատին։
     </audio>
   );
-};
+});
 
 export default BackgroundMusic;

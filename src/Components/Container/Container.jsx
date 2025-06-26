@@ -7,12 +7,14 @@ import InvitationText from "../InvitationText/InvitationText";
 import Line from "../Line/Line";
 import Program from "../Program/Program";
 import "./Container.css";
+import PlayStopMusic from "../PlayStopMusic/PlayStopMusic";
 
 const Container = () => {
   const [showConfirmModal, setShowConfirmModal] = useState(false);
 
   return (
     <main className="container">
+      <PlayStopMusic />
       <InvitationText />
       <Line />
       <Countdown targetDate={"2025-08-07T09:00"} />
