@@ -54,3 +54,12 @@ header .photo img {
     height: 100%;
   }
 }
+@media (max-width: 400px) {
+ .names {
+   font-size: 31px;
+   gap: 15px;
+  }
+  .date{
+    font-size: 3.5rem;
+  }
+}
