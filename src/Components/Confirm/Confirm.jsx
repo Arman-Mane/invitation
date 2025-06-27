@@ -10,6 +10,8 @@ const Confirm = ({ setShowConfirmModal }) => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+   const [isVisible, setIsVisible] = useState(true);
+    const [isAnimating, setIsAnimating] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -154,7 +156,8 @@ const Confirm = ({ setShowConfirmModal }) => {
           ))}
         </div>
         <div className="wedding-container">
-          <div className="wedding-form-card">
+          {/* <div className="wedding-form-card"> */}
+             <div className={`wedding-form-card ${!isSubmitted ? 'card-visible' : ''}`}>
             <div className="wedding-header">
               <svg
                 className="heart-icon"
@@ -202,6 +205,7 @@ const Confirm = ({ setShowConfirmModal }) => {
                       stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
+                      
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"

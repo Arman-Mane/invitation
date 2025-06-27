@@ -21,7 +21,7 @@ header .photo img {
   top: 25px;
   font-size: 35px;
   color: #242424;
-  text-shadow: 1px 1px 2px aqua, 0 0 1em aqua, 0 0 0.2em aqua;
+  text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #000;
   /* font-family: "ArTarumianBarakU-bold"; */
   font-family: "SHK_Dzeragir";
   display: flex;
@@ -44,11 +44,9 @@ header .photo img {
   bottom: 0;
   color: #242424;
   /* color: #fff; */
-  /* text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #000; */
-  text-shadow: 1px 1px 2px aqua, 0 0 1em aqua, 0 0 0.2em aqua;
-
+  text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #000;
+  /* text-shadow: 1px 1px 2px aqua, 0 0 1em aqua, 0 0 0.2em aqua; */
 }
-
 
 @media (min-width: 1000px) {
   header .photo {
