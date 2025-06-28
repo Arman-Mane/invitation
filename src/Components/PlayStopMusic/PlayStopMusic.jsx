@@ -30,7 +30,7 @@ const PlayStopMusic = () => {
         onClick={togglePlay}
         aria-label={isPlaying ? "Դադարեցնել" : "Նվագարկել"}
       >
-        {isPlaying ? <Pause size={32} color="#019191" /> : <Play size={32} color="#019191" />}
+        {isPlaying ? <Pause size={32} color="#008efb" /> : <Play size={32} color="#008efb" />}
       </button>
 
       <BackgroundMusic ref={musicRef} />

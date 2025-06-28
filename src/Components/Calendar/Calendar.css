@@ -35,7 +35,7 @@
     position: absolute;
     top: 68%;
     left: 50%;
-    color: #019191;
+    color: #008efb;
     transform: translate(-50%, -50%);
     font-size: 60px;
     -webkit-animation: heartbeat1 1.5s ease-in-out infinite both;

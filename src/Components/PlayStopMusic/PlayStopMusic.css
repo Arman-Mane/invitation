@@ -1,7 +1,7 @@
 
 /* Focus outline */
 :focus-visible {
-  outline: 2px solid #019191; /* Change dynamically with JS if needed */
+  outline: 2px solid #008efb; /* Change dynamically with JS if needed */
   outline-offset: 4px;
 }
 
@@ -45,7 +45,7 @@
   left: -3px;
   top: -3px;
   position: absolute;
-  background-image: conic-gradient(transparent, #019191);
+  background-image: conic-gradient(transparent, #008efb);
   border-radius: 99em;
   opacity: 0;
 }

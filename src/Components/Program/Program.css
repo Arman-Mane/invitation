@@ -23,7 +23,7 @@
 }
 .programItem_time {
   font-size: clamp(2rem, 10vw, 4rem);
-  color: #019191;
+  color: #008efb;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .programItem_city {

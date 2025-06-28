@@ -44,7 +44,7 @@ header .photo img {
   color: #242424;
   /* color: #fff; */
   text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #000;
-  /* text-shadow: 1px 1px 2px #019191, 0 0 1em #019191, 0 0 0.2em #019191; */
+  /* text-shadow: 1px 1px 2px #008efb, 0 0 1em #008efb, 0 0 0.2em #008efb; */
 }
 
 @media (min-width: 1000px) {
@@ -55,7 +55,8 @@ header .photo img {
 }
 @media (max-width: 550px) {
  .names {
-   font-size: 20px;
+   font-size: 22px;
+   top: 55px;
   }
   .date{
     font-size: 3.5rem;

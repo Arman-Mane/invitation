@@ -1,6 +1,6 @@
 
 :root {
-  --myBlue: #019191
+  --myBlue: #008efb
 }
 
 /* Մոդալ ովերլեյ */
@@ -206,7 +206,7 @@
 .open-button {
   position: relative;
   width: 100%;
-  background: linear-gradient(135deg, #019191 0%, rgb(31, 208, 190) 100%);
+  background: linear-gradient(135deg, #008efb 0%, rgb(31, 208, 190) 100%);
   color: white;
   font-weight: 600;
   padding: 1rem 2rem;
