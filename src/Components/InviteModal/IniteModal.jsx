@@ -83,7 +83,6 @@ const InviteModal = ({ onOpenInvitation }) => {
             <div className="button-overlay"></div>
             <div className="button-content" onClick={() => setIsVisible(false)}>
               <span className="button-text">Բացել հրավիրատոմսը</span>
-              <div className="button-emoji">✨</div>
             </div>
           </button>
 

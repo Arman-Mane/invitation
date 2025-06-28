@@ -30,7 +30,7 @@ const Container = () => {
 
       <div className="footer">
         <div className="modalBtn" onClick={() => setShowConfirmModal(true)}>
-         Խնդրում ենք հաստատել ձեր ներկայությունը
+         Հաստատեք ձեր ներկայությունը
         </div>
       </div>
       {showConfirmModal && (

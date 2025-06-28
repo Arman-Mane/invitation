@@ -24,7 +24,7 @@ const PlayStopMusic = () => {
   };
 
   return (
-    <div className="button-row">
+    <div className="button-row"  data-aos="fade-up">
       <button
         className={`button button--toggle button--play ${isPlaying ? "is-active" : ""}`}
         onClick={togglePlay}
