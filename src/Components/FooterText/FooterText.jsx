@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const FooterText = () => {
   return (
-    <div className="footerText">
+    <div className="footerText" data-aos="fade-up">
       <h3>
         «Արդ, մնում են այս երեքը՝ հավատ, հույս, սեր, և սրանցից մեծագույնը սերն
         է»

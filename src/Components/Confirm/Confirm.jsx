@@ -10,8 +10,8 @@ const Confirm = ({ setShowConfirmModal }) => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-   const [isVisible, setIsVisible] = useState(true);
-    const [isAnimating, setIsAnimating] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -51,9 +51,9 @@ const Confirm = ({ setShowConfirmModal }) => {
       console.log("Տվյալները ուղարկված են");
       setIsSubmitted(true);
       window.scrollTo({
-        top:0,
-        behavior: "smooth"
-      })
+        top: 0,
+        behavior: "smooth",
+      });
     } catch (err) {
       console.error("Սխալ:", err);
     } finally {
@@ -157,7 +157,11 @@ const Confirm = ({ setShowConfirmModal }) => {
         </div>
         <div className="wedding-container">
           {/* <div className="wedding-form-card"> */}
-             <div className={`wedding-form-card ${!isSubmitted ? 'card-visible' : ''}`}>
+          <div
+            className={`wedding-form-card ${
+              !isSubmitted ? "card-visible" : ""
+            }`}
+          >
             <div className="wedding-header">
               <svg
                 className="heart-icon"
@@ -197,22 +201,24 @@ const Confirm = ({ setShowConfirmModal }) => {
                       formData.attending === "yes" ? "selected-yes" : ""
                     }`}
                   >
-                    <svg
-                      className={`radio-icon yes ${
-                        formData.attending === "yes" ? "" : "radio-icon"
-                      }`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
+                    {formData.attending === "yes" ? (
+                      <svg
+                        className={`radio-icon yes radio-icon`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    ) : (
+                      <div className="radio-icon no-unselected"></div>
+                    )}
+
                     <span className="radio-text">Գալու եմ</span>
                   </div>
 
@@ -222,13 +228,24 @@ const Confirm = ({ setShowConfirmModal }) => {
                       formData.attending === "no" ? "selected-no" : ""
                     }`}
                   >
-                    <div
-                      className={
-                        formData.attending === "no"
-                          ? "radio-icon no-selected"
-                          : "radio-icon no-unselected"
-                      }
-                    ></div>
+                    {formData.attending === "no" ? (
+                      <svg
+                        className="radio-icon no"
+                        fill="none"
+                        stroke="red"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M15 9l-6 6m0-6l6 6m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    ) : (
+                      <div className="radio-icon no-unselected"></div>
+                    )}
+
                     <span className="radio-text">Չեմ կարող գալ</span>
                   </div>
                 </div>
@@ -272,11 +289,6 @@ const Confirm = ({ setShowConfirmModal }) => {
               <button
                 onClick={(e) => handleSubmitClick(e)}
                 disabled={isSubmitting}
-                style={{
-                  background: `${
-                    !formData?.name || !formData.attending ? "grey" : ""
-                  }`,
-                }}
                 className="submit-button"
               >
                 {isSubmitting ? (
@@ -324,19 +336,6 @@ const Confirm = ({ setShowConfirmModal }) => {
                 Փակել
               </button>
             </form>
-
-            {/* Footer */}
-            <div className="footer-text">
-              {/* Heart Icon */}
-              <svg
-                className="footer-heart"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-              </svg>
-              Սպասում ենք ձեզ մեր հարսանիքին
-            </div>
           </div>
         </div>
       </div>

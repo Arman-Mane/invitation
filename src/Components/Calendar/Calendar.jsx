@@ -4,7 +4,7 @@ import { CiHeart } from "react-icons/ci";
 
 const Calendar = () => {
   return (
-    <div id="calendar">
+    <div id="calendar" data-aos="zoom-in">
       <h1>Օգոստոս 2025</h1>
       <table>
         <thead>

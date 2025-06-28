@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header>
       <div className="names">
-        <h1 className="name">ԱրՄան</h1>
+        <h1 className="name">Արման</h1>
         <h2 className="and">և</h2>
         <h1 className="name">Մանե</h1>
       </div>

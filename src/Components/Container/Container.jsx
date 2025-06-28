@@ -8,6 +8,7 @@ import Line from "../Line/Line";
 import Program from "../Program/Program";
 import "./Container.css";
 import PlayStopMusic from "../PlayStopMusic/PlayStopMusic";
+import PhotosComp from "../PhotosComp/PhotosComp";
 
 const Container = () => {
   const [showConfirmModal, setShowConfirmModal] = useState(false);
@@ -19,6 +20,8 @@ const Container = () => {
       <Line />
       <Countdown targetDate={"2025-08-07T09:00"} />
       <Calendar />
+      <Line />
+      <PhotosComp />
       <Line />
       <Program />
       <Line />

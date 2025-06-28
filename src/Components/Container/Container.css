@@ -7,7 +7,7 @@ main {
 
 .modalBtn {
   max-width: 400px;
-  background: linear-gradient(135deg, aqua 0%, rgb(31, 208, 190) 100%);
+  background: linear-gradient(135deg, #019191 0%, rgb(31, 208, 190) 100%);
   padding: 12px 24px;
   border: none;
   font-size: 1.8rem;

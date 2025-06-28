@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Heart, Sparkles, Gift } from 'lucide-react';
-import './InviteModal.css';
+import React, { useState, useEffect } from "react";
+import { Heart, Sparkles, Gift } from "lucide-react";
+import "./InviteModal.css";
 
 const InviteModal = ({ onOpenInvitation }) => {
   const [isVisible, setIsVisible] = useState(true);
@@ -31,7 +31,7 @@ const InviteModal = ({ onOpenInvitation }) => {
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
               animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${3 + Math.random() * 2}s`
+              animationDuration: `${3 + Math.random() * 2}s`,
             }}
           >
             <Heart className="particle-heart" />
@@ -40,17 +40,21 @@ const InviteModal = ({ onOpenInvitation }) => {
       </div>
 
       {/* Բացիկ */}
-      <div className={`wedding-card ${isAnimating ? 'card-visible' : 'card-hidden'}`}>
+      <div
+        className={`wedding-card ${
+          isAnimating ? "card-visible" : "card-hidden"
+        }`}
+      >
         {/* Վերևի դեկորատիվ գիծ */}
         <div className="card-top-border"></div>
-        
+
         {/* Հիմնական բովանդակություն */}
         <div className="card-content">
           {/* Դեկորատիվ էլեմենտներ */}
           <div className="decoration decoration-1"></div>
           <div className="decoration decoration-2"></div>
           <div className="decoration decoration-3"></div>
-          
+
           {/* Կենտրոնական պատկեր */}
           <div className="heart-container">
             <div className="heart-wrapper">
@@ -63,29 +67,15 @@ const InviteModal = ({ onOpenInvitation }) => {
 
           {/* Գլխավոր գրություն */}
           <div className="title-section">
-            <h1 className="main-title">
-              💍 Հարսանյաց հրավիրատոմս
-            </h1>
-            <div className="subtitle-container">
-              <Sparkles className="sparkle sparkle-left" />
-              <p className="subtitle">
-                Շատ կարևոր միջոցառում
-              </p>
-              <Sparkles className="sparkle sparkle-right" />
-            </div>
+            <h1 className="main-title">💍 Հարսանյաց հրավիրատոմս</h1>
           </div>
 
           {/* Հրավիրական տեքստ */}
           <div className="invitation-text">
             <p className="main-text">
-              Սիրով հրավիրում ենք Ձեզ մեր կյանքի ամենակարևոր և ուրախ օրվա մասնակցությանը:
+              <Sparkles className="sparkle sparkle-left" /> Արման Մանե{" "}
+              <Sparkles className="sparkle sparkle-right" />
             </p>
-            <div className="gift-text">
-              <Gift className="gift-icon" />
-              <p className="gift-message">
-                Ձեր ներկայությունը մեր համար ամենամեծ նվերն է
-              </p>
-            </div>
           </div>
 
           {/* Բացելու կոճակ */}
@@ -98,13 +88,8 @@ const InviteModal = ({ onOpenInvitation }) => {
           </button>
 
           {/* Ներքևի դեկորատիվ տեքստ */}
-          <p className="hint-text">
-            Սեղմեք բացելու համար
-          </p>
+          <p className="hint-text">Սեղմեք բացելու համար</p>
         </div>
-
-        {/* Ներքևի դեկորատիվ գիծ */}
-        <div className="card-bottom-border"></div>
       </div>
     </div>
   );

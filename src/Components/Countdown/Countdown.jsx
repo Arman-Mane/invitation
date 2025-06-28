@@ -37,8 +37,8 @@ const Countdown = ({ targetDate, color }) => {
     <div className="countdownBox">
         {
           timeLeft?.days ? <>
-        <h2 className="countdown-title">Հարսանիքին մնաց՝</h2>
-      <div id="countdown" style={{ color: color }}>
+        <h2 className="countdown-title" data-aos="fade-up">Հարսանիքին մնաց՝</h2>
+      <div id="countdown" data-aos="fade-up" style={{ color: color }}>
               <div className="countdown-item">
           <p>{timeLeft?.days}</p> <span>Օր</span>
         </div>
@@ -52,7 +52,7 @@ const Countdown = ({ targetDate, color }) => {
           <p>{timeLeft?.seconds}</p> <span>Վրկ</span>
         </div>
         </div>
-          </> : <h2 className="countdown-title">Հարսանիքը սկսվել է</h2>
+          </> : <h2 className="countdown-title"data-aos="fade-up">Հարսանիքը սկսվել է</h2>
         }
       
     </div>
