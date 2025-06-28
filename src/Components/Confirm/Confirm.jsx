@@ -159,7 +159,7 @@ const Confirm = ({ setShowConfirmModal }) => {
           {/* <div className="wedding-form-card"> */}
           <div
             className={`wedding-form-card ${
-              !isSubmitted ? "card-visible" : ""
+              !isSubmitted ? "show-card" : ""
             }`}
           >
             <div className="wedding-header">
