@@ -14,7 +14,7 @@ const Program = () => {
           <img src={programImg1} alt="church" />
         </div>
         <h3 className="programItem_title" data-aos="fade-up">Պսակադրություն</h3>
-        <div className="programItem_time" data-aos="fade-up">14:30</div>
+        <div className="programItem_time" data-aos="fade-up">15:00</div>
         <div className="programItem_place" data-aos="fade-up">Սուրբ Գայանե եկեղեցի</div>
 
         <div className="place-photo church-photo" data-aos="zoom-in">
@@ -34,7 +34,7 @@ const Program = () => {
           <img src={programImg2} alt="church" />
         </div>
         <h3 className="programItem_title" data-aos="fade-up">Հանդիսություն</h3>
-        <div className="programItem_time" data-aos="fade-up">16:30</div>
+        <div className="programItem_time" data-aos="fade-up">17:00</div>
         <div className="programItem_place" data-aos="fade-up">Արև հանդիսությունների սրահ</div>
 
         <div className="place-photo restoran-photo" data-aos="zoom-in">
@@ -47,10 +47,6 @@ const Program = () => {
           </a>
         </div>
       </div>
-
-      {/* <div className="message">
-        <h2>Խնդրում ենք <br /> եկեղեցի և հանդիսությունների սրահ <br /> ներկայանալ նշված ժամից 15 րոպե շուտ։</h2>
-      </div> */}
       <Line />
 
       <div className="programItem">

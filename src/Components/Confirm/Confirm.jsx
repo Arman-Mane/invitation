@@ -117,11 +117,6 @@ const Confirm = ({ setShowConfirmModal }) => {
             </svg>
 
             <h2 className="success-title">Շնորհակալություն!</h2>
-            <p className="success-message">
-              Ձեր գրանցումը հաջողությամբ ստացվել է:
-            </p>
-
-            {/* Heart Icon */}
             <svg
               className="heart-small"
               fill="currentColor"
@@ -158,9 +153,7 @@ const Confirm = ({ setShowConfirmModal }) => {
         <div className="wedding-container">
           {/* <div className="wedding-form-card"> */}
           <div
-            className={`wedding-form-card ${
-              !isSubmitted ? "show-card" : ""
-            }`}
+            className={`wedding-form-card ${!isSubmitted ? "show-card" : ""}`}
           >
             <div className="wedding-header">
               <svg
@@ -173,7 +166,7 @@ const Confirm = ({ setShowConfirmModal }) => {
 
               <h1 className="wedding-title">Հաստատում</h1>
               <p className="wedding-subtitle">
-                 Խնդրում ենք հաստատել ձեր ներկայությունը
+                Խնդրում ենք հաստատել ձեր ներկայությունը
               </p>
             </div>
 
@@ -194,6 +187,10 @@ const Confirm = ({ setShowConfirmModal }) => {
               </div>
 
               <div className="form-group">
+                <label className="form-label">
+                  Կմասնակցե՞ք մեր հարսանյաց արարողությանը *
+                </label>
+
                 <div className="radio-group">
                   <div
                     onClick={() => handleAttendingChange("yes")}
@@ -219,7 +216,7 @@ const Confirm = ({ setShowConfirmModal }) => {
                       <div className="radio-icon no-unselected"></div>
                     )}
 
-                    <span className="radio-text">Գալու եմ</span>
+                    <span className="radio-text">Այո</span>
                   </div>
 
                   <div
@@ -246,7 +243,7 @@ const Confirm = ({ setShowConfirmModal }) => {
                       <div className="radio-icon no-unselected"></div>
                     )}
 
-                    <span className="radio-text">Չեմ կարող գալ</span>
+                    <span className="radio-text">Ոչ</span>
                   </div>
                 </div>
               </div>
@@ -325,7 +322,7 @@ const Confirm = ({ setShowConfirmModal }) => {
                         d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
                       />
                     </svg>
-                    <span>Գրանցվել</span>
+                    <span>Հաստատել</span>
                   </>
                 )}
               </button>
